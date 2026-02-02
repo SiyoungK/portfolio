@@ -13,17 +13,20 @@
   --font-mono: var(--font-geist-mono);
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Special Gothic Expanded One', sans-serif;
-  font-weight: 400;
 }
 
-@media (prefers-color-scheme: dark) {
+h3 {
+  color: rgb(145, 145, 145);
+}
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
