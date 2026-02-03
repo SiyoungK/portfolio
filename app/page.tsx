@@ -1,10 +1,12 @@
 import HeroPage from "@/components/HeroPage";
+import Navigation from "@/components/Navigation";
 
 export default function Home() {
   return (
     <div >
       {/* TODO: Nav */}
-      <main>
+      <Navigation/>
+      <main className="pt-[55px]">
         {/* ================ Hero ================ */}
         <HeroPage/>
 

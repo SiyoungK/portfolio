@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeroPage() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 h-[85vh] max-w-[100rem] mx-auto">
+    <section className="grid grid-cols-1 md:grid-cols-2 h-[85vh] max-w-400 mx-auto">
       {/* Text Section */}
       <div className="basis-1/2 my-auto">
         <div className="text-left p-10">
