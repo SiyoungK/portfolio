@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic&family=Special+Gothic+Expanded+One&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -13,8 +13,12 @@
   --font-mono: var(--font-geist-mono);
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: 'Special Gothic Expanded One', sans-serif;
+}
+
+h3, button {
+  font-family: 'Special Gothic', sans-serif;
 }
 
 h3 {
