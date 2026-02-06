@@ -1,28 +1,18 @@
 import HeroPage from "@/components/HeroPage";
 import Navigation from "@/components/Navigation";
+import ProjectExample from "@/components/ProjectExample";
 
 export default function Home() {
   return (
     <div >
       {/* TODO: Nav */}
       <Navigation/>
-      <main className="pt-[55px]">
+      <main className="pt-16 md:pt-[55px]">
         {/* ================ Hero ================ */}
         <HeroPage/>
-
         {/* ================ Alter Alley (Project 1) ================ */}
         {/* TODO: Giant label that says "Project work" */}
-        <section>
-          {/* TODO: Alter Alley photo */}
-          <div>
-            <h2 className="text-2xl">Project: Alter Alley</h2>
-            <p>
-              TODO: Add project description here.
-            </p>
-            {/* TODO: Link to Alter Alley */}
-          </div>
-        </section>
-
+        <ProjectExample/>
         {/* ================ Creative works ================ */}
         {/* TODO: Giant label that says "Creative work" */}
         <section>
