@@ -1,5 +1,27 @@
 # Siyoung's Portfolio Site
 
+## Installation
+
+1. Clone the repo:
+    ```bash
+    git clone <repo link>
+    ```
+
+2. Install dependencies
+    ```bash
+    cd portfolio
+    npm install
+    ```
+
+3. Run Server
+    ```bash
+    npm run dev
+    ```
+
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+    You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    
 ## App Structure
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
@@ -8,18 +30,6 @@ The app folder is used for layout.tsx and page.tsx files, as well as the globals
 Components, image files, and non-page.js files will be located in other folders in the root.
 
 Styling prioritizes tailwind-first implementations.
-
-## Testing
-
-1. Run the development server:
-
-    ```bash
-    npm run dev
-    ```
-
-2. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-    You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 Note: This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
