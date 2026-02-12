@@ -1,8 +1,9 @@
 import Image from "next/image";
+import BasicButton from "./BasicButton";
 
 export default function HeroPage() {
   return (
-    <section className="pb-10 md:grid md:grid-cols-2 md:h-[85vh] max-w-400 mx-auto">
+    <section className="py-2 md:grid md:grid-cols-2 md:h-[85vh] max-w-400 mx-auto">
       {/* Text Section */}
       <div className="md:basis-1/2 md: my-auto">
         <div className="text-center md:text-left py-10 md:p-10">
@@ -11,21 +12,19 @@ export default function HeroPage() {
             Frontend Web Developer & UI/UX Designer
           </h3>
           <div className="flex flex-col items-center md:flex-row md:justify-start gap-4">
-            <button className="bg-black text-white py-2 px-5 w-[70%] md:w-auto rounded-xl hover:bg-zinc-700">Contact</button>
-            <button className="bg-black text-white py-2 px-5 w-[70%] md:w-auto rounded-xl hover:bg-zinc-700">Resume</button>
+            <BasicButton text="Contact"/>
+            <BasicButton text="Resume"/>
           </div>
         </div>
       </div>
       <div className="flex justify-center md:basis-1/2 md:my-auto">
-        <div>
           <Image 
             alt="Alter Alley, a website for artists to share alters of Magic the Gathering cards." 
             src="/alteralley-home.png"
-            className="rounded-xl object-cover"
+            className="rounded-xl object-cover shadow-md"
             width={300}
             height={300}
             /> 
-        </div>
         {/* Image */}
         {/* <div className="md:static rounded-xl max-w-[90vw] h-[40vh] md:h-[527px] md:w-[826px] md:align-left drop-shadow-xl/50">
           <div className="md:absolute">
