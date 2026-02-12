@@ -1,7 +1,7 @@
 import HeroPage from "@/components/HeroPage";
 import HorizontalDivider from "@/components/HorizontalDivider";
 import Navigation from "@/components/Navigation";
-import ProjectExample from "@/components/ProjectExample";
+import LargeCard from "@/components/LargeCard";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
         <HorizontalDivider/>
         {/* ================ Alter Alley (Project 1) ================ */}
         {/* TODO: Giant label that says "Project work" */}
-        <ProjectExample/>
+        <LargeCard title="Project: Alter Alley" description="A website for artists to share alters of Magic the Gathering cards." imageSrc="/alteralley-home.png"/>
         <HorizontalDivider/>
         {/* ================ Creative works ================ */}
         {/* TODO: Giant label that says "Creative work" */}
@@ -29,13 +29,7 @@ export default function Home() {
         </section>
 
         {/* ================ About ================ */}
-        <section>
-          <h2>About Me</h2>
-          <p>
-            TODO: Add about me description here.
-          </p>
-        </section>
-
+        <LargeCard title="About Me" description="TODO" imageSrc="/alteralley-home.png"/>
       </main>
       {/* TODO: Footer */}
     </div>
