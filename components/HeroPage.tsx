@@ -10,9 +10,9 @@ export default function HeroPage() {
           <h3 className="pb-6">
             Frontend Web Developer & UI/UX Designer
           </h3>
-          <div className="flex justify-center md:justify-start gap-4">
-            <button className="bg-black text-white py-2 px-5 rounded-xl">Contact</button>
-            <button className="bg-black text-white py-2 px-5 rounded-xl">Resume</button>
+          <div className="flex flex-col items-center md:flex-row md:justify-start gap-4">
+            <button className="bg-black text-white py-2 px-5 w-[70%] md:w-auto rounded-xl hover:bg-zinc-700">Contact</button>
+            <button className="bg-black text-white py-2 px-5 w-[70%] md:w-auto rounded-xl hover:bg-zinc-700">Resume</button>
           </div>
         </div>
       </div>
