@@ -1,4 +1,5 @@
 import HeroPage from "@/components/HeroPage";
+import HorizontalDivider from "@/components/HorizontalDivider";
 import Navigation from "@/components/Navigation";
 import ProjectExample from "@/components/ProjectExample";
 
@@ -7,12 +8,14 @@ export default function Home() {
     <div >
       {/* TODO: Nav */}
       <Navigation/>
-      <main className="pt-16 md:pt-[55px]">
+      <main className="pt-16 md:pt-13.75">
         {/* ================ Hero ================ */}
         <HeroPage/>
+        <HorizontalDivider/>
         {/* ================ Alter Alley (Project 1) ================ */}
         {/* TODO: Giant label that says "Project work" */}
         <ProjectExample/>
+        <HorizontalDivider/>
         {/* ================ Creative works ================ */}
         {/* TODO: Giant label that says "Creative work" */}
         <section>
