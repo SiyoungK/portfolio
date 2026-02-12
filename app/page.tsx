@@ -2,10 +2,11 @@ import HeroPage from "@/components/HeroPage";
 import HorizontalDivider from "@/components/HorizontalDivider";
 import Navigation from "@/components/Navigation";
 import LargeCard from "@/components/LargeCard";
+import MediumCard from "@/components/MediumCard";
 
 export default function Home() {
   return (
-    <div >
+    <div className="md:max-w-[90%] mx-auto">
       {/* TODO: Nav */}
       <Navigation/>
       <main className="pt-16 md:pt-13.75">
@@ -18,10 +19,13 @@ export default function Home() {
         <HorizontalDivider/>
         {/* ================ Creative works ================ */}
         {/* TODO: Giant label that says "Creative work" */}
-        <section>
+        <section className="gap-8 flex flex-col md:flex-row md:justify-center">
           {/* TODO: Image + text component for this section, to repeat 3x */}
+          <MediumCard title="3D Animation" description="Short film development using Maya, Blender, and Adobe After Effects" imageSrc="/alteralley-home.png"/>
+          <MediumCard title="2D Animation" description="TODO" imageSrc="/alteralley-home.png"/>
+          <MediumCard title="Digital Paintings" description="TODO" imageSrc="/alteralley-home.png"/>
         </section>
-
+        <HorizontalDivider/>
         {/* ================ Experience ================ */}
         {/* TODO: Giant label that says "Experience" */}
         <section>
