@@ -9,7 +9,7 @@ type LargeCardProps = {
 
 export default function LargeCard({ title, description, imageSrc }: LargeCardProps) {
     return (
-        <section className="py-2">
+        <section>
           {/* TODO: Alt text input */}
           <div className="flex justify-center pb-4">
             <Image 

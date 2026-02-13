@@ -31,7 +31,7 @@ export default function Home() {
         <section>
           {/* TODO: Card component for this section, to repeat 2x */}
         </section>
-
+        <HorizontalDivider/>
         {/* ================ About ================ */}
         <LargeCard title="About Me" description="TODO" imageSrc="/alteralley-home.png"/>
       </main>

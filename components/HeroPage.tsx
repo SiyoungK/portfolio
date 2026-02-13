@@ -3,7 +3,7 @@ import BasicButton from "./BasicButton";
 
 export default function HeroPage() {
   return (
-    <section className="py-2 md:grid md:grid-cols-2 md:h-[85vh] max-w-400 mx-auto">
+    <section className="md:grid md:grid-cols-2 md:h-[85vh] max-w-400 mx-auto">
       {/* Text Section */}
       <div className="md:basis-1/2 md: my-auto">
         <div className="text-center md:text-left py-10 md:p-10">

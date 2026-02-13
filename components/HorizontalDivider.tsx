@@ -1,8 +1,9 @@
-// Divider class
-// Mobile and small breakpoints only. Hidden on md and above.
+// DIVIDER CLASS
+// Dividing line shown on mobile/small breakpoints only.
+// Line is hidden on md and above, but spacing is preserved.
 
 export default function HorizontalDivider() {
     return (
-        <hr className="md:hidden my-10 w-[80%] mx-auto"/>
+      <hr className="md:hidden w-[80%] mx-auto"/>
     )
 }
