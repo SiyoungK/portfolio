@@ -10,8 +10,8 @@ type MediumCardProps = {
 
 export default function MediumCard({ imageSrc, title, description }: MediumCardProps) {
     return (
-        <div className="flex justify-center">
-          <div className="w-[90%] md:w-100 flex flex-col gap-4">
+        <div className="md:basis-1/3 flex justify-center">
+          <div className="w-[90%] flex flex-col gap-4">
             {/* Image */}
             <div className="relative w-full aspect-5/6">
               <Image 
