@@ -23,12 +23,14 @@ export default function Home() {
           {/* TODO: Image + text component for this section, to repeat 3x */}
           <MediumCard title="3D Animation" description="Short film development using Maya, Blender, and Adobe After Effects" imageSrc="/alteralley-home.png"/>
           <MediumCard title="2D Animation" description="TODO" imageSrc="/alteralley-home.png"/>
-          <MediumCard title="Digital Paintings" description="TODO" imageSrc="/alteralley-home.png"/>
+          <MediumCard title="Digital Paintings" description="TODOssssssssssssssssssssssssssssssssssss" imageSrc="/alteralley-home.png"/>
         </section>
         <HorizontalDivider/>
         {/* ================ Experience ================ */}
         {/* TODO: Giant label that says "Experience" */}
-        <section>
+        <section className="gap-8 flex flex-col md:flex-row md:justify-center">
+          <MediumCard compact={true} title="AWS" description="TODO" imageSrc="/alteralley-home.png"/>
+          <MediumCard compact={true} title="Erie Insurance" description="TODO" imageSrc="/alteralley-home.png"/>
           {/* TODO: Card component for this section, to repeat 2x */}
         </section>
         <HorizontalDivider/>
