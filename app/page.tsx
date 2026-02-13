@@ -37,7 +37,6 @@ export default function Home() {
         {/* ================ About ================ */}
         <LargeCard title="About Me" description="TODO" imageSrc="/alteralley-home.png"/>
       </main>
-      {/* TODO: Footer */}
     </div>
   );
 }
