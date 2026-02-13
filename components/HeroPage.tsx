@@ -25,26 +25,6 @@ export default function HeroPage() {
             width={300}
             height={300}
             /> 
-        {/* Image */}
-        {/* <div className="md:static rounded-xl max-w-[90vw] h-[40vh] md:h-[527px] md:w-[826px] md:align-left drop-shadow-xl/50">
-          <div className="md:absolute">
-            <Image 
-              alt="Alter Alley, a website for artists to share alters of Magic the Gathering cards." 
-              src="/alteralley-home.png"
-              className="md:mt-[32px] rounded-b-xl object-cover"
-              fill={true}
-              /> 
-          </div> */}
-          {/* Mac window bar */}
-          {/* TODO: Replace with svg version to scale easily, and be more optimal than divs */}
-          {/* <div className="bg-white absolute h-[32px] w-full rounded-t-xl align-top drop-shadow-sm">
-            <div className="flex gap-[6px] p-[12px]">
-              <div className="bg-red-400 size-[9px] rounded-full"/>
-              <div className="bg-yellow-400 size-[9px] rounded-full"/>
-              <div className="bg-green-400 size-[9px] rounded-full"/>
-            </div>
-          </div>
-        </div> */}
       </div>
     </section>
   )
