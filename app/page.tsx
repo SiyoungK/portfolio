@@ -6,7 +6,7 @@ import MediumCard from "@/components/MediumCard";
 
 export default function Home() {
   return (
-    <div className="md:max-w-[90%] mx-auto">
+    <div>
       {/* TODO: Nav */}
       <Navigation/>
       <main className="pt-16 md:pt-13.75">
