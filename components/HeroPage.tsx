@@ -12,8 +12,8 @@ export default function HeroPage() {
             Frontend Web Developer & UI/UX Designer
           </h3>
           <div className="flex flex-col items-center md:flex-row md:justify-start gap-4">
-            <BasicButton text="Contact"/>
-            <BasicButton text="Resume"/>
+            <BasicButton text="Contact" external={true} href="https://www.linkedin.com/in/siyoung/"/>
+            <BasicButton text="Resume" external={true} href="KimSiyoungResume2026.pdf"/>
           </div>
         </div>
       </div>
