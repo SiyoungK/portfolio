@@ -1,6 +1,6 @@
 export default function Navigation() {
   return (
-    <nav className="flex justify-center w-screen">
+    <nav className="flex justify-center">
       <div className="bg-black flex fixed justify-between w-[70%] my-5 mx-auto p-2 rounded-xl z-9999">
         {/* Logo */}
         <button className="text-white py-2 px-5 rounded-xl">
