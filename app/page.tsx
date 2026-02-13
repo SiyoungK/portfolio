@@ -35,7 +35,7 @@ export default function Home() {
         </section>
         <HorizontalDivider/>
         {/* ================ About ================ */}
-        <LargeCard title="About Me" description="TODO" imageSrc="/alteralley-home.png"/>
+        <LargeCard title="About Me" description="TODO" imageSrc="/alteralley-home.png" textFirst={true}/>
       </main>
     </div>
   );
