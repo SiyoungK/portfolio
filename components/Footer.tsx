@@ -4,7 +4,7 @@ import LinkedInIcon from "./icons/LinkedInIcon";
 export default function Footer() {
     return (
         <footer className="flex justify-left py-10 border-t border-gray-300 text-footer-text">
-          <div className="mx-auto w-[90%] md:max-w-[90%]">
+          <div className="max-w-400 mx-auto w-[80%]">
             <div className="md:flex md:flex-row md:justify-between">
               {/* === Useful links === */}
               <div className="py-5 flex justify-start flex-col md:flex-row gap-3">

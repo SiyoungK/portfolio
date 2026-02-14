@@ -1,3 +1,5 @@
+// image space dimensions should define textbox height. Don't make redundant/conflicting dimension changes to text.
+
 import Image from "next/image";
 import BasicButton from "./BasicButton";
 
@@ -11,12 +13,12 @@ type LargeCardProps = {
 export default function LargeCard({ title, description, imageSrc, textFirst=false }: LargeCardProps) {
     return (
         <section>
-          <div className={`flex flex-col ${textFirst ? 'md:flex-row-reverse' : 'md:flex-row'} gap-4
-              max-w-400 mx-auto w-[80%] md:w-full md:h-150 md:max-h-[80vh]`}>
+          <div className={`flex flex-col ${textFirst ? 'md:flex-row-reverse' : 'md:flex-row'} gap-4 md:gap-10
+              max-w-400 mx-auto w-[90%]`}>
             {/* --- Image --- */}
             {/* TODO: Alt text input */}
             <div className="md:basis-1/2 flex justify-center">
-              <div className="relative w-full md:w-auto md:h-[80%] aspect-7/5 md:m-auto">
+              <div className="relative w-full  aspect-7/5 md:m-auto">
                 <Image 
                   alt={"A grey and white image representing a lack of an image."} 
                   src={imageSrc}
@@ -27,8 +29,8 @@ export default function LargeCard({ title, description, imageSrc, textFirst=fals
             </div>
 
             {/* --- Text --- */}
-            <div className="md:basis-1/2 flex justify-center ">
-              <div className="w-full md:w-auto md:h-[80%] md:aspect-7/5 md:m-auto text-center md:text-left flex flex-col md:justify-center gap-2 md:gap-4">
+            <div className="md:basis-1/2 flex justify-center">
+              <div className="w-full text-center md:text-left flex flex-col md:justify-center gap-2 md:gap-4">
                 <h2 className="text-2xl">{title}</h2>
                 <h3>
                   {description}
