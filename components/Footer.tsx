@@ -8,12 +8,16 @@ export default function Footer() {
             <div className="md:flex md:flex-row md:justify-between">
               {/* === Useful links === */}
               <div className="py-5 flex justify-start flex-col md:flex-row gap-3">
-                <a href="KimSiyoungResume2026.pdf" target="_blank">
-                  Resume
-                </a>
-                <a href="https://www.linkedin.com/in/siyoung/" target="_blank" rel="noopener noreferrer">
-                  Contact
-                </a>
+                <div>
+                  <a href="KimSiyoungResume2026.pdf" target="_blank">
+                    Resume
+                  </a>
+                </div>
+                <div>
+                  <a href="https://www.linkedin.com/in/siyoung/" target="_blank" rel="noopener noreferrer">
+                    Contact
+                  </a>
+                </div>
               </div>
               {/* === Socials === */}
               <div className="py-5 flex flex-row gap-4">
