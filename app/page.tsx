@@ -19,19 +19,25 @@ export default function Home() {
         <HorizontalDivider/>
         {/* ================ Creative works ================ */}
         {/* TODO: Giant label that says "Creative work" */}
-        <section className="gap-8 flex flex-col md:flex-row md:justify-center">
-          {/* TODO: Image + text component for this section, to repeat 3x */}
-          <MediumCard title="3D Animation" description="Short film development using Maya, Blender, and Adobe After Effects" imageSrc="/alteralley-home.png"/>
-          <MediumCard title="2D Animation" description="TODO" imageSrc="/alteralley-home.png"/>
-          <MediumCard title="Digital Paintings" description="TODOssssssssssssssssssssssssssssssssssss" imageSrc="/alteralley-home.png"/>
+        <section>
+          <div className="gap-8 flex flex-col md:flex-row md:justify-center
+            max-w-400 mx-auto w-[80%]">
+            {/* TODO: Image + text component for this section, to repeat 3x */}
+            <MediumCard title="3D Animation" description="Short film development using Maya, Blender, and Adobe After Effects" imageSrc="/alteralley-home.png"/>
+            <MediumCard title="2D Animation" description="TODO" imageSrc="/alteralley-home.png"/>
+            <MediumCard title="Digital Paintings" description="TODOssssssssssssssssssssssssssssssssssss" imageSrc="/alteralley-home.png"/>
+          </div>
         </section>
         <HorizontalDivider/>
         {/* ================ Experience ================ */}
         {/* TODO: Giant label that says "Experience" */}
-        <section className="gap-8 flex flex-col md:flex-row md:justify-center">
-          <MediumCard compact={true} title="AWS" description="TODO" imageSrc="/alteralley-home.png"/>
-          <MediumCard compact={true} title="Erie Insurance" description="TODO" imageSrc="/alteralley-home.png"/>
-          {/* TODO: Card component for this section, to repeat 2x */}
+        <section>
+          <div className="gap-8 flex flex-col md:flex-row md:justify-center 
+          max-w-400 mx-auto w-[80%]">
+            <MediumCard compact={true} title="AWS" description="TODO" imageSrc="/alteralley-home.png"/>
+            <MediumCard compact={true} title="Erie Insurance" description="TODO" imageSrc="/alteralley-home.png"/>
+            {/* TODO: Card component for this section, to repeat 2x */}
+          </div>
         </section>
         <HorizontalDivider/>
         {/* ================ About ================ */}
