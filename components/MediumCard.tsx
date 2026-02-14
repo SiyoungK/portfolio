@@ -3,13 +3,13 @@
 import Image from "next/image"
 
 type MediumCardProps = {
-  imageSrc: string;
+  imageSrc?: string;
   title: string;
   description: string;
   compact?: boolean;
 }
 
-export default function MediumCard({ imageSrc, title, description, compact=false }: MediumCardProps) {
+export default function MediumCard({ imageSrc="/temp.png", title, description, compact=false }: MediumCardProps) {
     return (
         <div className="md:basis-1/3 flex justify-center wrap-break-word min-w-0">
           <div className="w-[90%] flex flex-col gap-4">

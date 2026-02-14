@@ -12,16 +12,10 @@ export default function Navigation() {
         <div className="flex space-x-4 items-center">
           <div className="hidden md:block">
             <button className="text-white py-2 px-5 rounded-xl">
-              Projects
-            </button>
-            <button className="text-white py-2 px-5 rounded-xl">
-              Artwork
+              Portfolio
             </button>
             <button className="text-white py-2 px-5 rounded-xl">
               Experience
-            </button>
-            <button className="text-white py-2 px-5 rounded-xl">
-              About
             </button>
           </div>
           <div>

@@ -6,11 +6,14 @@ import BasicButton from "./BasicButton";
 type LargeCardProps = {
   title: string;
   description: string;
-  imageSrc: string;
+  buttonText?: string;
+  buttonDisabled?: boolean;
+  imageSrc?: string;
+  imageSrc2?: string;
   textFirst?: boolean;
 }
 
-export default function LargeCard({ title, description, imageSrc, textFirst=false }: LargeCardProps) {
+export default function LargeCard({ title, description, buttonText, buttonDisabled, imageSrc="/temp.png", imageSrc2, textFirst=false }: LargeCardProps) {
     return (
         <section>
           <div className={`flex flex-col ${textFirst ? 'md:flex-row-reverse' : 'md:flex-row'} gap-4 md:gap-10
@@ -18,13 +21,21 @@ export default function LargeCard({ title, description, imageSrc, textFirst=fals
             {/* --- Image --- */}
             {/* TODO: Alt text input */}
             <div className="md:basis-1/2 flex justify-center">
-              <div className="relative w-full  aspect-7/5 md:m-auto">
+              <div className="relative w-full aspect-7/5 md:m-auto rounded-xl shadow-md overflow-clip">
                 <Image 
                   alt={"A grey and white image representing a lack of an image."} 
                   src={imageSrc}
-                  className="rounded-xl object-cover shadow-md"
+                  className={`inset-0 object-cover ${imageSrc2 && "-mask-linear-70 mask-linear-from-50% mask-linear-to-50%"}`}
                   fill
                 />
+                {imageSrc2 &&
+                  <Image 
+                    alt={"A grey and white image representing a lack of an image."} 
+                    src={imageSrc2}
+                    className="object-cover -z-5"
+                    fill
+                  />
+                }
               </div>
             </div>
 
@@ -35,11 +46,13 @@ export default function LargeCard({ title, description, imageSrc, textFirst=fals
                 <h3>
                   {description}
                 </h3>
-                <div>
-                  <BasicButton text="View project"
-                    className="bg-black text-white hover:bg-zinc-700 border-black hover:border-zinc-700"/>
-                </div>
-                {/* TODO: Link to Alter Alley */}
+                {buttonText &&
+                  <div>
+                    <BasicButton text={buttonText}
+                      disabled={buttonDisabled}
+                      className={`bg-black text-white hover:bg-zinc-700 border-black hover:border-zinc-700`}/>
+                  </div>
+                }
               </div>
             </div>
           </div>
