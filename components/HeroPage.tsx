@@ -20,7 +20,7 @@ export default function HeroPage() {
               <BasicButton text="Contact" external={true} href="https://www.linkedin.com/in/siyoung/"
                 className="hover:bg-zinc-700 text-white bg-black border-black hover:border-zinc-700"/>
               <BasicButton text="Resume" external={true} href="KimSiyoungResume2026.pdf"
-                className="hover:bg-zinc-300 border-gray-400"/>
+                className="hover:bg-zinc-300 border-gray-300"/>
             </div>
           </div>
         </div>
