@@ -4,7 +4,7 @@ import BasicButton from "./BasicButton";
 export default function HeroPage() {
   return (
     <section className="overflow-x-hidden">
-      <div className="relative max-w-400 md:grid md:grid-cols-2 md:h-180 md:max-h-[70vh] mx-auto">
+      <div className="relative max-w-400 md:grid md:grid-cols-2 md:h-180 md:max-h-[80vh] mx-auto">
         {/* Gradient */}
         <div className="absolute -z-10 bg-radial from-indigo-400 to-transparent to-70% blur-2xl
         w-[90%] h-[35%] bottom-0 left-0 right-0 m-auto
@@ -17,8 +17,10 @@ export default function HeroPage() {
               Frontend Web Developer & UI/UX Designer
             </h3>
             <div className="flex flex-col items-center md:flex-row md:justify-start gap-4">
-              <BasicButton text="Contact" external={true} href="https://www.linkedin.com/in/siyoung/"/>
-              <BasicButton text="Resume" external={true} href="KimSiyoungResume2026.pdf"/>
+              <BasicButton text="Contact" external={true} href="https://www.linkedin.com/in/siyoung/"
+                className="hover:bg-zinc-700 text-white bg-black border-black hover:border-zinc-700"/>
+              <BasicButton text="Resume" external={true} href="KimSiyoungResume2026.pdf"
+                className="hover:bg-zinc-300 border-gray-400"/>
             </div>
           </div>
         </div>

@@ -31,7 +31,8 @@ export default function LargeCard({ title, description, imageSrc, textFirst=fals
                 {description}
               </h3>
               <div>
-                <BasicButton text="View project"/>
+                <BasicButton text="View project"
+                  className="bg-black text-white hover:bg-zinc-700 border-black hover:border-zinc-700"/>
               </div>
               {/* TODO: Link to Alter Alley */}
             </div>
