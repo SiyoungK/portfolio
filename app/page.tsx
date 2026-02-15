@@ -26,8 +26,7 @@ export default function Home() {
         {/* TODO: Giant label that says "Creative work" */}
         <section>
           <div className="gap-8 flex flex-col md:flex-row md:justify-center
-            max-w-400 mx-auto w-[80%]">
-            {/* TODO: Image + text component for this section, to repeat 3x */}
+            max-w-400 mx-auto w-[90%]">
             <MediumCard title="Lost Home - Animated Short" description="Created using Maya and Adobe After Effects."
               imageSrc="/newhome-thumb.png"/>
             <MediumCard title="Pim Sticker" description="Sticker designs inspired by Smiling Friends."
@@ -41,7 +40,7 @@ export default function Home() {
         {/* TODO: Giant label that says "Experience" */}
         <section>
           <div className="gap-8 flex flex-col md:flex-row md:justify-center 
-          max-w-400 mx-auto w-[80%]">
+          max-w-400 mx-auto w-[90%]">
             <MediumCard compact={true} title="AWS" 
               description="TODO"
               imageSrc="/aws-logo.png"
@@ -49,7 +48,6 @@ export default function Home() {
             <MediumCard compact={true} title="Erie Insurance" description="TODO"
               imageSrc="/erieinsurance-logo.png"
               alt="Erie Insurance Logo"/>
-            {/* TODO: Card component for this section, to repeat 2x */}
           </div>
         </section>
         <HorizontalDivider/>

@@ -13,7 +13,7 @@ type MediumCardProps = {
 export default function MediumCard({ imageSrc="/temp.png", title, description, compact=false, alt="" }: MediumCardProps) {
     return (
         <div className="md:basis-1/3 flex justify-center wrap-break-word min-w-0">
-          <div className="w-[90%] flex flex-col gap-4">
+          <div className="w-full flex flex-col gap-4">
             {compact ?
             <>
               <div className="w-full aspect-5/6 flex flex-col rounded-xl overflow-hidden shadow-md">
