@@ -33,11 +33,11 @@ export default function MediumCard({ imageSrc="/temp.png", title, description, c
             :
             <>
               {/* Image */}
-              <div className="relative w-full aspect-5/6 shadow-md">
+              <div className="relative w-full aspect-5/6 shadow-md rounded-xl overflow-hidden">
                 <Image 
                   alt={"TODO: alt text"} 
                   src={imageSrc}
-                  className="rounded-xl object-cover"
+                  className="object-cover"
                   fill
                   /> 
               </div>
