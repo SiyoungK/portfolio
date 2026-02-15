@@ -19,7 +19,8 @@ export default function Home() {
           description="A website for artists to share alters of Magic the Gathering cards." 
           buttonText="Coming Soon"
           buttonDisabled={true}
-          imageSrc="/alteralley-home.png"/>
+          imageSrc="/alteralley-home.png"
+          imageClass="object-top-left"/>
         <HorizontalDivider/>
         {/* ================ Creative works ================ */}
         {/* TODO: Giant label that says "Creative work" */}
@@ -27,9 +28,12 @@ export default function Home() {
           <div className="gap-8 flex flex-col md:flex-row md:justify-center
             max-w-400 mx-auto w-[80%]">
             {/* TODO: Image + text component for this section, to repeat 3x */}
-            <MediumCard title="3D Animation" description="Short film development using Maya, Blender, and Adobe After Effects"/>
-            <MediumCard title="2D Animation" description="TODO"/>
-            <MediumCard title="Digital Paintings" description="TODOssssssssssssssssssssssssssssssssssss"/>
+            <MediumCard title="Lost Home - Animated Short" description="Created using Maya and Adobe After Effects."
+              imageSrc="/newhome-thumb.png"/>
+            <MediumCard title="Pim Sticker" description="Sticker designs inspired by Smiling Friends."
+              imageSrc="/pim.png"/>
+            <MediumCard title="Charizard Fan Art" description="Submitted for 2024's Pokemon TCG Illustration Competition."
+              imageSrc="/charizard.png"/>
           </div>
         </section>
         <HorizontalDivider/>
@@ -38,14 +42,20 @@ export default function Home() {
         <section>
           <div className="gap-8 flex flex-col md:flex-row md:justify-center 
           max-w-400 mx-auto w-[80%]">
-            <MediumCard compact={true} title="AWS" description="TODO"/>
-            <MediumCard compact={true} title="Erie Insurance" description="TODO"/>
+            <MediumCard compact={true} title="AWS" 
+              description="TODO"
+              imageSrc="/aws-logo.png"
+              alt="AWS Logo"/>
+            <MediumCard compact={true} title="Erie Insurance" description="TODO"
+              imageSrc="/erieinsurance-logo.png"
+              alt="Erie Insurance Logo"/>
             {/* TODO: Card component for this section, to repeat 2x */}
           </div>
         </section>
         <HorizontalDivider/>
         {/* ================ About ================ */}
-        <LargeCard title="About Me" description="TODO" textFirst={true}
+        <LargeCard title="About Me" textFirst={true}
+         description="Hey, my name's Siyoung (see-young)! I graduated from Georgia Tech with a B.S. in Computer Science. "
          imageSrc2="/aboutme-pic3.jpg"
          imageSrc="/aboutme-pic4.jpg"
          />

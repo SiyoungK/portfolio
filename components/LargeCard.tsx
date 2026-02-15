@@ -1,4 +1,5 @@
 // image space dimensions should define textbox height. Don't make redundant/conflicting dimension changes to text.
+// image class only for image 1
 
 import Image from "next/image";
 import BasicButton from "./BasicButton";
@@ -11,9 +12,10 @@ type LargeCardProps = {
   imageSrc?: string;
   imageSrc2?: string;
   textFirst?: boolean;
+  imageClass?: string;
 }
 
-export default function LargeCard({ title, description, buttonText, buttonDisabled, imageSrc="/temp.png", imageSrc2, textFirst=false }: LargeCardProps) {
+export default function LargeCard({ title, description, buttonText, buttonDisabled, imageSrc="/temp.png", imageSrc2, textFirst=false, imageClass=""}: LargeCardProps) {
     return (
         <section>
           <div className={`flex flex-col ${textFirst ? 'md:flex-row-reverse' : 'md:flex-row'} gap-4 md:gap-10
@@ -25,7 +27,8 @@ export default function LargeCard({ title, description, buttonText, buttonDisabl
                 <Image 
                   alt={"A grey and white image representing a lack of an image."} 
                   src={imageSrc}
-                  className={`inset-0 object-cover ${imageSrc2 && "-mask-linear-70 mask-linear-from-50% mask-linear-to-50%"}`}
+                  className={`inset-0 object-cover ${imageSrc2 && "-mask-linear-70 mask-linear-from-48% mask-linear-to-52%"}
+                    ${imageClass}`}
                   fill
                 />
                 {imageSrc2 &&

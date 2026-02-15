@@ -20,14 +20,14 @@ export default function HeroPage() {
               <BasicButton text="Contact" external={true} href="https://www.linkedin.com/in/siyoung/"
                 className="hover:bg-zinc-700 text-white bg-black border-black hover:border-zinc-700"/>
               <BasicButton text="Resume" external={true} href="KimSiyoungResume2026.pdf"
-                className="hover:bg-zinc-300 border-gray-300"/>
+                className="hover:bg-zinc-300 border-black"/>
             </div>
           </div>
         </div>
         {/* Image */}
         <div className="md:pl-10 md:h-full flex justify-center md:justify-start md:basis-1/2 md:my-auto md:items-center md:overflow-x-hidden lg:overflow-visible">
           <div className="relative w-[80%] md:w-auto md:h-[90%] aspect-video overflow-clip shadow-xl
-            border border-t-10 border-gray-300 rounded-sm
+            border border-t-10 border-black rounded-sm
             md:border-3 md:border-t-35 md:rounded-xl">
             <Image 
               alt="Alter Alley, a website for artists to share alters of Magic the Gathering cards." 

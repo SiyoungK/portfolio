@@ -7,9 +7,10 @@ type MediumCardProps = {
   title: string;
   description: string;
   compact?: boolean;
+  alt?: string;
 }
 
-export default function MediumCard({ imageSrc="/temp.png", title, description, compact=false }: MediumCardProps) {
+export default function MediumCard({ imageSrc="/temp.png", title, description, compact=false, alt="" }: MediumCardProps) {
     return (
         <div className="md:basis-1/3 flex justify-center wrap-break-word min-w-0">
           <div className="w-[90%] flex flex-col gap-4">
@@ -18,9 +19,9 @@ export default function MediumCard({ imageSrc="/temp.png", title, description, c
               <div className="w-full aspect-5/6 flex flex-col rounded-xl overflow-hidden shadow-md">
                 <div className="relative basis-1/2">
                   <Image 
-                    alt={"TODO: alt text"} 
+                    alt={alt} 
                     src={imageSrc}
-                    className="object-cover"
+                    className="object-contain"
                     fill
                   /> 
                 </div>
@@ -35,7 +36,7 @@ export default function MediumCard({ imageSrc="/temp.png", title, description, c
               {/* Image */}
               <div className="relative w-full aspect-5/6 shadow-md rounded-xl overflow-hidden">
                 <Image 
-                  alt={"TODO: alt text"} 
+                  alt={alt} 
                   src={imageSrc}
                   className="object-cover"
                   fill
