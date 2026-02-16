@@ -27,7 +27,7 @@ export default function LargeCard({ title, description, buttonText, buttonDisabl
                 <Image 
                   alt={"A grey and white image representing a lack of an image."} 
                   src={imageSrc}
-                  className={`inset-0 object-cover ${imageSrc2 && "-mask-linear-70 mask-linear-from-48% mask-linear-to-52%"}
+                  className={`inset-0 object-cover z-6 ${imageSrc2 && "-mask-linear-70 mask-linear-from-48% mask-linear-to-52%"}
                     ${imageClass}`}
                   fill
                 />
@@ -35,7 +35,7 @@ export default function LargeCard({ title, description, buttonText, buttonDisabl
                   <Image 
                     alt={"A grey and white image representing a lack of an image."} 
                     src={imageSrc2}
-                    className="object-cover -z-5"
+                    className="object-cover z-5"
                     fill
                   />
                 }
