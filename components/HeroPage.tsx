@@ -31,7 +31,7 @@ export default function HeroPage() {
             md:border-3 md:border-t-35 md:rounded-xl">
             <Image 
               alt="Alter Alley, a website for artists to share alters of Magic the Gathering cards." 
-              src="/AlterAlleyHome.png"
+              src="/alteralley-home.png"
               className="object-cover object-top-left"
               fill
               /> 

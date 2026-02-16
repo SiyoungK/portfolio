@@ -16,7 +16,7 @@ export default function MediumCard({ imageSrc="/temp.png", title, description, c
           <div className="w-full flex flex-col gap-4">
             {compact ?
             <>
-              <div className="w-full aspect-5/6 flex flex-col rounded-xl overflow-hidden shadow-md">
+              <div className="w-full aspect-5/6 flex flex-col rounded-xl overflow-hidden shadow-md md:my-auto">
                 <div className="relative basis-1/2">
                   <Image 
                     alt={alt} 
@@ -34,7 +34,8 @@ export default function MediumCard({ imageSrc="/temp.png", title, description, c
             :
             <>
               {/* Image */}
-              <div className="relative w-full aspect-5/6 shadow-md rounded-xl overflow-hidden">
+              <div className="relative w-full aspect-5/6 shadow-md rounded-xl overflow-hidden
+                scale-95 hover:scale-100">
                 <Image 
                   alt={alt} 
                   src={imageSrc}

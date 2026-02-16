@@ -26,7 +26,7 @@ export default function Home() {
         {/* TODO: Giant label that says "Creative work" */}
         <section>
           <div className="gap-8 flex flex-col md:flex-row md:justify-center
-            max-w-400 mx-auto w-[90%]">
+            max-w-400 mx-auto w-[90%] md:h-180 md:max-h-[80vh]">
             <MediumCard title="Lost Home - Animated Short" description="Created using Maya and Adobe After Effects."
               imageSrc="/newhome-thumb.png"/>
             <MediumCard title="Pim Sticker" description="Sticker designs inspired by Smiling Friends."
@@ -40,7 +40,7 @@ export default function Home() {
         {/* TODO: Giant label that says "Experience" */}
         <section>
           <div className="gap-8 flex flex-col md:flex-row md:justify-center 
-          max-w-400 mx-auto w-[90%]">
+          max-w-400 mx-auto w-[90%] md:h-180 md:max-h-[80vh]">
             <MediumCard compact={true} title="AWS" 
               description="TODO"
               imageSrc="/aws-logo.png"

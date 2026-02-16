@@ -19,7 +19,7 @@ export default function LargeCard({ title, description, buttonText, buttonDisabl
     return (
         <section>
           <div className={`flex flex-col ${textFirst ? 'md:flex-row-reverse' : 'md:flex-row'} gap-4 md:gap-10
-              max-w-400 mx-auto w-[90%]`}>
+              max-w-400 mx-auto w-[90%] md:h-180 md:max-h-[80vh]`}>
             {/* --- Image --- */}
             {/* TODO: Alt text input */}
             <div className="md:basis-1/2 flex justify-center">
