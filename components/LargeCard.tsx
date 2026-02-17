@@ -24,7 +24,7 @@ export default function LargeCard({ title, description, buttonText, buttonDisabl
             {/* --- Image --- */}
             {/* TODO: Alt text input */}
             <div className="md:basis-1/2 flex justify-center">
-              <motion.div className="relative w-full aspect-7/5 md:m-auto rounded-xl shadow-md overflow-clip"
+              <motion.div className="relative w-full aspect-7/5 md:m-auto rounded-xl shadow-md overflow-clip border-3"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{

@@ -7,11 +7,13 @@ export default function HeroPage() {
     <section className="overflow-x-hidden">
       <div className="relative max-w-400 md:grid md:grid-cols-2 md:h-180 md:max-h-[80vh] mx-auto">
         {/* Gradient */}
-        <div className="absolute -z-10 bg-radial from-indigo-400 to-transparent to-70% blur-2xl
+        {/* <div className="absolute -z-10 bg-radial from-indigo-400 to-transparent to-70% blur-2xl
         w-[90%] h-[35%] bottom-0 left-0 right-0 m-auto
-        md:w-[40%] md:h-[75%] md:top-0 md:left-3/7 md:right-auto"/>
+        md:w-[40%] md:h-[75%] md:top-0 md:left-3/7 md:right-auto"/> */}
         {/* Text */}
-        <div className="md:basis-1/2 md:my-auto">
+        <div className="md:basis-1/2 md:my-auto 
+          bg-radial from-white to-transparent from-60% to-100% blue-2xl"
+          >
           <div className="text-center md:text-left py-10 md:p-10 wrap-break-word">
             <h1 className="text-7xl pb-4">Siyoung Kim</h1>
             <h3 className="pb-6">

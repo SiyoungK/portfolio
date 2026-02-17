@@ -18,7 +18,7 @@ export default function MediumCard({ imageSrc="/temp.png", title, description, c
           <div className="w-full flex flex-col gap-4">
             {compact ?
             <>
-              <motion.div className="w-full aspect-5/6 flex flex-col rounded-xl overflow-hidden shadow-md md:my-auto"
+              <motion.div className="w-full aspect-5/6 flex flex-col rounded-xl overflow-hidden shadow-md md:my-auto bg-white border-3"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
@@ -48,7 +48,7 @@ export default function MediumCard({ imageSrc="/temp.png", title, description, c
             :
             <>
               {/* Image */}
-              <motion.div className="relative w-full aspect-5/6 shadow-md rounded-xl overflow-hidden"
+              <motion.div className="relative w-full aspect-5/6 shadow-md rounded-xl overflow-hidden bg-white border-3"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{

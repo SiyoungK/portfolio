@@ -21,7 +21,7 @@ export default function BasicButton({text, external=false, href="", disabled, cl
         <button
           disabled={disabled}
           className={`${className} py-2 px-5 w-[70%] md:w-auto rounded-xl border-2
-          disabled:pointer-events-none disabled:opacity-50`}>
+          disabled:pointer-events-none disabled:bg-gray-400 disabled:border-gray-400`}>
           {text}
         </button>
         
