@@ -11,7 +11,7 @@ export default function HeroPage() {
           bg-white/80"
           >
           <div className="text-center md:text-left py-10 md:p-10 wrap-break-word">
-            <h1 className="text-7xl pb-4">Siyoung Kim</h1>
+            <h1 className="text-7xl pb-6">Siyoung Kim</h1>
             <h3 className="pb-6">
               Frontend Web Developer & UI/UX Designer
             </h3>
@@ -34,7 +34,7 @@ export default function HeroPage() {
           >
           <div className="relative w-[80%] md:w-auto md:h-[90%] aspect-video overflow-clip shadow-xl
             border border-t-10 border-black rounded-sm
-            md:border-3 md:border-t-35 md:rounded-xl">
+            md:border-2 md:border-t-35 md:rounded-xl">
             <Image 
               alt="Alter Alley, a website for artists to share alters of Magic the Gathering cards." 
               src="/alteralley-home.png"
