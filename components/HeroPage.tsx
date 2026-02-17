@@ -8,7 +8,7 @@ export default function HeroPage() {
       <div className="relative max-w-400 md:grid md:grid-cols-2 md:h-180 md:max-h-[80vh] mx-auto">
         {/* Text */}
         <div className="md:basis-1/2 md:my-auto 
-          bg-radial from-white to-transparent from-60% to-100% blue-2xl"
+          bg-white/80"
           >
           <div className="text-center md:text-left py-10 md:p-10 wrap-break-word">
             <h1 className="text-7xl pb-4">Siyoung Kim</h1>

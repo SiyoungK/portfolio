@@ -49,12 +49,12 @@ export default function Home() {
           <div className="gap-8 flex flex-col md:flex-row md:justify-center 
           max-w-400 mx-auto w-[90%] md:h-180 md:max-h-[80vh]">
             <MediumCard compact={true} title="AWS" 
-              description="TODO"
+              description="Software Development Engineer"
               imageSrc="/aws-logo.png"
               alt="AWS Logo"
               delayIndex={0}
               />
-            <MediumCard compact={true} title="Erie Insurance" description="TODO"
+            <MediumCard compact={true} title="Erie Insurance" description="Software Engineering Intern"
               imageSrc="/erieinsurance-logo.png"
               alt="Erie Insurance Logo"
               delayIndex={1}

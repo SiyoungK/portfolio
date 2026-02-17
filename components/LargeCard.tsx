@@ -55,8 +55,9 @@ export default function LargeCard({ title, description, buttonText, buttonDisabl
             </div>
 
             {/* --- Text --- */}
-            <div className="md:basis-1/2 flex justify-center">
-              <div className="w-full text-center md:text-left flex flex-col md:justify-center gap-2 md:gap-4">
+            <div className="md:basis-1/2 flex justify-center items-center">
+              <div className="w-full h-fit text-center md:text-left flex flex-col md:justify-center gap-2 md:gap-4
+              bg-white/80">
                 <h2 className="text-2xl">{title}</h2>
                 <h3>
                   {description}
