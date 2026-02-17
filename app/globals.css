@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Special+Gothic&family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doto&family=Special+Gothic&family=Special+Gothic+Expanded+One&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -11,8 +11,9 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-doto: "Doto", sans-serif;
 
-  --color-footer-text: rgb(145, 145, 145);
+  --color-footer-text: rgb(145, 145, 145)
 }
 
 h1, h2 {
@@ -25,10 +26,11 @@ h2 {
 
 h3, button, a {
   font-family: 'Special Gothic', sans-serif;
+  font-size: 1.25rem;
 }
 
 h3 {
-  color: rgb(145, 145, 145);
+  color: rgb(126, 126, 126);
 }
 
 /* @media (prefers-color-scheme: dark) {

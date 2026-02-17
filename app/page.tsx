@@ -4,6 +4,7 @@ import HorizontalDivider from "@/components/HorizontalDivider";
 import Navigation from "@/components/Navigation";
 import LargeCard from "@/components/LargeCard";
 import MediumCard from "@/components/MediumCard";
+import Marquee from "@/components/Marquee";
 
 export default function Home() {
   return (
@@ -13,13 +14,11 @@ export default function Home() {
       <main className="pt-16 md:pt-13.75">
         {/* ================ Hero ================ */}
         <HeroPage/>
-        <HorizontalDivider/>
+        <Marquee text="REACT TYPESCRIPT NEXTJS TAILWIND CSS HTML MOTION"/>
         {/* ================ Alter Alley (Project 1) ================ */}
         {/* TODO: Giant label that says "Project work" */}
         <LargeCard title="Project: Alter Alley" 
           description="A website for artists to share alters of Magic the Gathering cards." 
-          buttonText="Coming Soon"
-          buttonDisabled={true}
           imageSrc="/alteralley-home.png"
           imageClass="object-top-left"/>
         <HorizontalDivider/>
