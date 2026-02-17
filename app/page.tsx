@@ -1,3 +1,4 @@
+"use client"
 import HeroPage from "@/components/HeroPage";
 import HorizontalDivider from "@/components/HorizontalDivider";
 import Navigation from "@/components/Navigation";
@@ -28,11 +29,17 @@ export default function Home() {
           <div className="gap-8 flex flex-col md:flex-row md:justify-center
             max-w-400 mx-auto w-[90%] md:h-180 md:max-h-[80vh]">
             <MediumCard title="Lost Home - Animated Short" description="Created using Maya and Adobe After Effects."
-              imageSrc="/newhome-thumb.png"/>
+              imageSrc="/newhome-thumb.png"
+              delayIndex={0}
+              />
             <MediumCard title="Pim Sticker" description="Sticker designs inspired by Smiling Friends."
-              imageSrc="/pim.png"/>
+              imageSrc="/pim.png"
+              delayIndex={1}
+              />
             <MediumCard title="Charizard Fan Art" description="Submitted for 2024's Pokemon TCG Illustration Competition."
-              imageSrc="/charizard.png"/>
+              imageSrc="/charizard.png"
+              delayIndex={2}
+              />
           </div>
         </section>
         <HorizontalDivider/>
@@ -44,10 +51,14 @@ export default function Home() {
             <MediumCard compact={true} title="AWS" 
               description="TODO"
               imageSrc="/aws-logo.png"
-              alt="AWS Logo"/>
+              alt="AWS Logo"
+              delayIndex={0}
+              />
             <MediumCard compact={true} title="Erie Insurance" description="TODO"
               imageSrc="/erieinsurance-logo.png"
-              alt="Erie Insurance Logo"/>
+              alt="Erie Insurance Logo"
+              delayIndex={1}
+              />
           </div>
         </section>
         <HorizontalDivider/>

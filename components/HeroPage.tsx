@@ -1,5 +1,6 @@
 import Image from "next/image";
 import BasicButton from "./BasicButton";
+import { motion } from "motion/react";
 
 export default function HeroPage() {
   return (
@@ -25,7 +26,14 @@ export default function HeroPage() {
           </div>
         </div>
         {/* Image */}
-        <div className="md:pl-10 md:h-full flex justify-center md:justify-start md:basis-1/2 md:my-auto md:items-center md:overflow-x-hidden lg:overflow-visible">
+        <motion.div className="md:pl-10 md:h-full flex justify-center md:justify-start md:basis-1/2 md:my-auto md:items-center md:overflow-x-hidden lg:overflow-visible"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.8,
+            ease: "easeOut"
+          }}
+          >
           <div className="relative w-[80%] md:w-auto md:h-[90%] aspect-video overflow-clip shadow-xl
             border border-t-10 border-black rounded-sm
             md:border-3 md:border-t-35 md:rounded-xl">
@@ -36,7 +44,7 @@ export default function HeroPage() {
               fill
               /> 
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

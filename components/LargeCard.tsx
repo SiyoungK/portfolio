@@ -3,6 +3,7 @@
 
 import Image from "next/image";
 import BasicButton from "./BasicButton";
+import { motion } from "motion/react";
 
 type LargeCardProps = {
   title: string;
@@ -23,7 +24,18 @@ export default function LargeCard({ title, description, buttonText, buttonDisabl
             {/* --- Image --- */}
             {/* TODO: Alt text input */}
             <div className="md:basis-1/2 flex justify-center">
-              <div className="relative w-full aspect-7/5 md:m-auto rounded-xl shadow-md overflow-clip">
+              <motion.div className="relative w-full aspect-7/5 md:m-auto rounded-xl shadow-md overflow-clip"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 0.8,
+                  ease: "easeOut"
+                }}
+                viewport={{
+                  once: true,
+                  amount: 0.2
+                }}
+              >
                 <Image 
                   alt={"A grey and white image representing a lack of an image."} 
                   src={imageSrc}
@@ -39,7 +51,7 @@ export default function LargeCard({ title, description, buttonText, buttonDisabl
                     fill
                   />
                 }
-              </div>
+              </motion.div>
             </div>
 
             {/* --- Text --- */}
