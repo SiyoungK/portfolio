@@ -1,12 +1,13 @@
-import Rolodex from './Rolodex'
+import Rolodex, { RolodexRef } from './Rolodex'
 import CameraTester from './CameraTester'
 import { Canvas } from '@react-three/fiber'
+import { useRef } from 'react'
 
 export default function InteractivePortfolio() {
+  const rolodexRef = useRef<RolodexRef>(null)
 
   const startAnimation = () => {
-    // TODO: Send start animation trigger to Rolodex. If animation in progress, do not start another.
-    console.log("Click!")
+    rolodexRef.current?.triggerAnim()
   }
 
   return (
@@ -18,7 +19,7 @@ export default function InteractivePortfolio() {
           fov: 43
         }}>
           <ambientLight intensity={100}/>
-          <Rolodex/>
+          <Rolodex ref={rolodexRef}/>
           <CameraTester/>
         </Canvas>
       </div>
