@@ -9,7 +9,7 @@ import TypingHeader from "@/components/TypingHeader";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white bg-[radial-gradient(lightgray_1px,transparent_1px)] bg-size-[40px_40px]">
+    <div className="overflow-hidden min-h-screen bg-white bg-[radial-gradient(lightgray_1px,transparent_1px)] bg-size-[40px_40px]">
       {/* TODO: Nav */}
       <Navigation/>
       <main className="pt-16 md:pt-13.75">
