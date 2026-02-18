@@ -28,7 +28,7 @@ export default function MediumCard({ imageSrc="/temp.png", title, description, c
                 }}
                 viewport={{
                   once: true,
-                  amount: 0.2
+                  amount: 0.5
                 }}
               >
                 <div className="relative basis-1/2">
@@ -58,7 +58,7 @@ export default function MediumCard({ imageSrc="/temp.png", title, description, c
                 }}
                 viewport={{
                   once: true,
-                  amount: 0.2
+                  amount: 0.5
                 }}
               >
                 <Image 

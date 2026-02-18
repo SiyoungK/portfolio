@@ -18,15 +18,14 @@ export default function Home() {
         <Marquee text="REACT TYPESCRIPT NEXTJS TAILWIND CSS HTML MOTION"/>
         {/* ================ Alter Alley (Project 1) ================ */}
         {/* TODO: Giant label that says "Project work" */}
-        <TypingHeader text="PORTFOLIO"/>
-        <LargeCard title="Project: Alter Alley" 
-          description="A website for artists to share alters of Magic the Gathering cards." 
-          imageSrc="/alteralley-home.png"
-          imageClass="object-top-left"/>
-        <HorizontalDivider/>
-        {/* ================ Creative works ================ */}
-        {/* TODO: Giant label that says "Creative work" */}
-        <section>
+        <section id="portfolio">
+          <TypingHeader text="PORTFOLIO"/>
+          <LargeCard title="Project: Alter Alley" 
+            description="A website for artists to share alters of Magic the Gathering cards." 
+            imageSrc="/alteralley-home.png"
+            imageClass="object-top-left"/>
+          <HorizontalDivider/>
+          {/* ================ Creative works ================ */}
           <div className="gap-8 flex flex-col md:flex-row md:justify-center
             max-w-400 mx-auto w-[90%] md:h-180 md:max-h-[80vh]">
             <MediumCard title="Lost Home - Animated Short" description="Created using Maya and Adobe After Effects."
@@ -45,9 +44,8 @@ export default function Home() {
         </section>
         <HorizontalDivider/>
         {/* ================ Experience ================ */}
-        {/* TODO: Giant label that says "Experience" */}
-        <TypingHeader text="EXPERIENCE"/>
-        <section>
+        <section id="experience">
+          <TypingHeader text="EXPERIENCE"/>
           <div className="gap-8 flex flex-col md:flex-row md:justify-center 
           max-w-400 mx-auto w-[90%] md:h-180 md:max-h-[80vh]">
             <MediumCard compact={true} title="AWS" 
@@ -65,12 +63,14 @@ export default function Home() {
         </section>
         <HorizontalDivider/>
         {/* ================ About ================ */}
-        <TypingHeader text="ABOUT ME"/>
-        <LargeCard title="About Me" textFirst={true}
-         description="Hey, my name's Siyoung (see-young)! I graduated from Georgia Tech with a B.S. in Computer Science. "
-         imageSrc2="/aboutme-pic3.jpg"
-         imageSrc="/aboutme-pic4.jpg"
-         />
+        <section>
+          <TypingHeader text="ABOUT ME"/>
+          <LargeCard title="About Me" textFirst={true}
+           description="Hey, my name's Siyoung (see-young)! I graduated from Georgia Tech with a B.S. in Computer Science. "
+           imageSrc2="/aboutme-pic3.jpg"
+           imageSrc="/aboutme-pic4.jpg"
+           />
+        </section>
       </main>
     </div>
   );

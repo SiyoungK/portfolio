@@ -21,7 +21,7 @@ export default function TypingHeader({ text }: { text: string }) {
   }
 
   return (
-    <div className="max-w-400 mx-auto w-[90%]">
+    <div className="max-w-400 mx-auto w-[90%] h-15 md:h-30">
       <motion.h2
         className="mx-auto w-fit md:w-auto flex"
         initial="hidden"
@@ -40,11 +40,12 @@ export default function TypingHeader({ text }: { text: string }) {
         ))}
         <motion.div
           className="bg-black w-0.5 h-13 md:h-25 my-auto"
-          animate={{
+          whileInView={{
             opacity: [1, 1, 0, 0]
           }}
+          viewport={{ once: true, amount: 0.8}}
           transition={{
-            repeat: Infinity,
+            repeat: 5,
             delay: 0.2 + 0.14 * text.split("").length,
             duration: 1,
             times: [0, 0.5, 0.5, 1],

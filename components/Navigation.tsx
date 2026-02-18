@@ -11,12 +11,18 @@ export default function Navigation() {
         {/* Links */}
         <div className="flex space-x-4 items-center">
           <div className="hidden md:block">
-            <button className="text-black py-2 px-5 rounded-xl">
+            <a
+              href="#portfolio" 
+              className="text-black py-2 px-5 rounded-xl"
+            >
               Portfolio
-            </button>
-            <button className="text-black py-2 px-5 rounded-xl">
+            </a>
+            <a 
+              href="#experience"
+              className="text-black py-2 px-5 rounded-xl"
+            >
               Experience
-            </button>
+            </a>
           </div>
           <div>
             <BasicButton text="Contact" external={true} href="https://www.linkedin.com/in/siyoung/" 
