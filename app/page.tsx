@@ -18,7 +18,7 @@ export default function Home() {
         <Marquee text="REACT TYPESCRIPT NEXTJS TAILWIND CSS HTML MOTION"/>
         {/* ================ Alter Alley (Project 1) ================ */}
         {/* TODO: Giant label that says "Project work" */}
-        <section id="portfolio">
+        <section id="portfolio" className="scroll-mt-16 md:scroll-mt-13.75">
           <TypingHeader text="PORTFOLIO"/>
           <LargeCard title="Project: Alter Alley" 
             description="A website for artists to share alters of Magic the Gathering cards." 
@@ -44,7 +44,7 @@ export default function Home() {
         </section>
         <HorizontalDivider/>
         {/* ================ Experience ================ */}
-        <section id="experience">
+        <section id="experience" className="scroll-mt-16 md:scroll-mt-13.75">
           <TypingHeader text="EXPERIENCE"/>
           <div className="gap-8 flex flex-col md:flex-row md:justify-center 
           max-w-400 mx-auto w-[90%] md:h-180 md:max-h-[80vh]">
