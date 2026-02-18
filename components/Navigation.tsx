@@ -3,11 +3,11 @@ import BasicButton from "./BasicButton";
 export default function Navigation() {
   return (
     <nav className="flex justify-center">
-      <div className="bg-white border-2 border-black flex fixed justify-between w-[80%] md:w-[50%] my-5 mx-auto p-2 rounded-xl z-9999">
+      <div className="bg-white border-2 border-black flex fixed justify-between w-[80vw] md:max-w-250 h-16 my-5 mx-auto p-2 rounded-xl z-9999">
         {/* Logo */}
         <a 
           href="#hero"
-          className="text-black py-2 px-5 rounded-xl"
+          className="text-black my-auto mx-3 rounded-xl"
         >
             SK
         </a>
