@@ -6,7 +6,6 @@ import LargeCard from "@/components/LargeCard";
 import MediumCard from "@/components/MediumCard";
 import Marquee from "@/components/Marquee";
 import TypingHeader from "@/components/TypingHeader";
-import InteractivePortfolio from "@/components/InteractivePortfolio";
 
 export default function Home() {
   return (
