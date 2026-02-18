@@ -30,7 +30,7 @@ export default function HeroPage() {
       </div>
       {/* Rolodex */}
       <div className="md:basis-1/2 flex items-center justify-center">
-        <motion.div className="aspect-square w-180"
+        <motion.div className="aspect-square w-[80%] md:w-180"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
