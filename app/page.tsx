@@ -14,10 +14,11 @@ export default function Home() {
       <Navigation/>
       <main className="pt-16 md:pt-13.75">
         {/* ================ Hero ================ */}
-        <section id="hero" className="overflow-x-hidden scroll-mt-16 md:scroll-mt-13.75">
+        <section id="hero" className="scroll-mt-16 md:scroll-mt-13.75">
+          <Marquee text="REACT TYPESCRIPT NEXTJS TAILWIND CSS HTML MOTION" slope={2}/>
           <HeroPage/>
+          <Marquee text="REACT TYPESCRIPT NEXTJS TAILWIND CSS HTML MOTION" slope={-2}/>
         </section>
-        <Marquee text="REACT TYPESCRIPT NEXTJS TAILWIND CSS HTML MOTION" slope={-2}/>
         {/* ================ Portfolio ================ */}
         <section id="portfolio" className="scroll-mt-16 md:scroll-mt-13.75">
           <TypingHeader text="PORTFOLIO"/>

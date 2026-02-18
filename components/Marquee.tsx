@@ -10,7 +10,7 @@ export default function Marquee({ text="Lorem Ipsum", repeatCount=8, slope=0 }: 
   const texts = Array(repeatCount).fill(text)
   const rotation = (slope >= 0) ? (slope > 0 ? "-rotate-2" : "") : "rotate-2"
   return (
-    <div className="py-4 md:py-10 flex justify-center">
+    <div className="flex justify-center">
       <div className={`relative flex bg-black text-white font-doto ${rotation} w-full scale-110`}>
         <motion.div 
           className="flex whitespace-nowrap"

@@ -5,16 +5,16 @@ import { OrbitControls as OrbitControlsImpl } from 'three-stdlib';
 
 export default function CameraContainer({ debugEnabled=false }: {debugEnabled?: boolean }) {
   const controlsRef = useRef<OrbitControlsImpl>(null)
-  const targetPoint = new Vector3(-2.37, 3.27, -0.27)
+  const targetPoint = new Vector3(-2.30, 3.01, -0.22)
 
   return (
     <>
       {debugEnabled ?
         <OrbitControls
           target={targetPoint}
-          enableZoom={false}
-          enablePan={false}
-          enableRotate={false}
+          enableZoom={true}
+          enablePan={true}
+          enableRotate={true}
           autoRotate={true}
           autoRotateSpeed={2}
 
