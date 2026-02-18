@@ -5,6 +5,7 @@ import Navigation from "@/components/Navigation";
 import LargeCard from "@/components/LargeCard";
 import MediumCard from "@/components/MediumCard";
 import Marquee from "@/components/Marquee";
+import TypingHeader from "@/components/TypingHeader";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Marquee text="REACT TYPESCRIPT NEXTJS TAILWIND CSS HTML MOTION"/>
         {/* ================ Alter Alley (Project 1) ================ */}
         {/* TODO: Giant label that says "Project work" */}
+        <TypingHeader text="PORTFOLIO"/>
         <LargeCard title="Project: Alter Alley" 
           description="A website for artists to share alters of Magic the Gathering cards." 
           imageSrc="/alteralley-home.png"
@@ -44,6 +46,7 @@ export default function Home() {
         <HorizontalDivider/>
         {/* ================ Experience ================ */}
         {/* TODO: Giant label that says "Experience" */}
+        <TypingHeader text="EXPERIENCE"/>
         <section>
           <div className="gap-8 flex flex-col md:flex-row md:justify-center 
           max-w-400 mx-auto w-[90%] md:h-180 md:max-h-[80vh]">
@@ -62,6 +65,7 @@ export default function Home() {
         </section>
         <HorizontalDivider/>
         {/* ================ About ================ */}
+        <TypingHeader text="ABOUT ME"/>
         <LargeCard title="About Me" textFirst={true}
          description="Hey, my name's Siyoung (see-young)! I graduated from Georgia Tech with a B.S. in Computer Science. "
          imageSrc2="/aboutme-pic3.jpg"
