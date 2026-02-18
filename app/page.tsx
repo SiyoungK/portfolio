@@ -22,8 +22,6 @@ export default function Home() {
         {/* ================ Portfolio ================ */}
         <section id="portfolio" className="scroll-mt-16 md:scroll-mt-13.75">
           <TypingHeader text="PORTFOLIO"/>
-
-
           <LargeCard title="Project: Alter Alley" 
             description="A website for artists to share alters of Magic the Gathering cards." 
             imageSrc="/alteralley-home.png"
