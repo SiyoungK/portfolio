@@ -37,7 +37,7 @@ export default function CameraContainer({ debugEnabled=false }: {debugEnabled?: 
           target={targetPoint}
           enableZoom={false}
           enablePan={false}
-          enableRotate={false}
+          enableRotate={true}
           autoRotate={true}
           autoRotateSpeed={2}
         />

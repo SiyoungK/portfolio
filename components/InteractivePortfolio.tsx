@@ -1,7 +1,7 @@
 import Rolodex, { RolodexRef } from './Rolodex'
 import CameraContainer from './CameraContainer'
 import { Canvas } from '@react-three/fiber'
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 
 export default function InteractivePortfolio() {
   const rolodexRef = useRef<RolodexRef>(null)
@@ -9,6 +9,14 @@ export default function InteractivePortfolio() {
   const startAnimation = () => {
     rolodexRef.current?.triggerAnim()
   }
+
+  // animate every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      startAnimation()
+    }, 2000)
+    return () => clearInterval(interval)
+  }, [])
 
   return (
     <div className="relative w-full h-full">
@@ -22,12 +30,6 @@ export default function InteractivePortfolio() {
           <Rolodex ref={rolodexRef}/>
           <CameraContainer/>
         </Canvas>
-      </div>
-      {/* "barrier" to let users rightclick to inspect, etc. on rolodex */}
-      <div className='w-full h-full flex justify-center items-center'>
-        <button className="absolute z-10 w-[80%] h-[80%]"
-          onClick={startAnimation}
-        />
       </div>
     </div>
   )
