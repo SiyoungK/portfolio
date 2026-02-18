@@ -5,9 +5,12 @@ export default function Navigation() {
     <nav className="flex justify-center">
       <div className="bg-white border-2 border-black flex fixed justify-between w-[80%] md:w-[50%] my-5 mx-auto p-2 rounded-xl z-9999">
         {/* Logo */}
-        <button className="text-black py-2 px-5 rounded-xl">
+        <a 
+          href="#hero"
+          className="text-black py-2 px-5 rounded-xl"
+        >
             SK
-        </button>
+        </a>
         {/* Links */}
         <div className="flex space-x-4 items-center">
           <div className="hidden md:block">

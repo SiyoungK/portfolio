@@ -14,7 +14,9 @@ export default function Home() {
       <Navigation/>
       <main className="pt-16 md:pt-13.75">
         {/* ================ Hero ================ */}
-        <HeroPage/>
+        <section id="hero" className="overflow-x-hidden scroll-mt-16 md:scroll-mt-13.75">
+          <HeroPage/>
+        </section>
         <Marquee text="REACT TYPESCRIPT NEXTJS TAILWIND CSS HTML MOTION"/>
         {/* ================ Alter Alley (Project 1) ================ */}
         {/* TODO: Giant label that says "Project work" */}
