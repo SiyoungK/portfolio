@@ -17,7 +17,7 @@ export default function Home() {
         <section id="hero" className="overflow-x-hidden scroll-mt-16 md:scroll-mt-13.75">
           <HeroPage/>
         </section>
-        <Marquee text="REACT TYPESCRIPT NEXTJS TAILWIND CSS HTML MOTION"/>
+        <Marquee text="REACT TYPESCRIPT NEXTJS TAILWIND CSS HTML MOTION" slope={-2}/>
         {/* ================ Portfolio ================ */}
         <section id="portfolio" className="scroll-mt-16 md:scroll-mt-13.75">
           <TypingHeader text="PORTFOLIO"/>
