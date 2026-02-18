@@ -6,19 +6,23 @@ export default function HeroPage() {
   return (
     <div className="relative max-w-400 md:grid md:grid-cols-2 md:h-180 md:max-h-[80vh] mx-auto">
       {/* Text */}
-      <div className="md:basis-1/2 md:my-auto 
-        bg-white/80"
-        >
-        <div className="text-center md:text-left py-10 md:p-10 wrap-break-word">
-          <h1 className="text-7xl pb-6">Siyoung Kim</h1>
-          <h3 className="pb-6">
-            Frontend Web Developer & UI/UX Designer
-          </h3>
-          <div className="flex flex-col items-center md:flex-row md:justify-start gap-4">
+      <div className="md:basis-1/2 md:my-auto">
+        <div className="mx-auto w-fit text-center md:text-left my-10 md:m-10 wrap-break-word">
+          <div className="mb-6">
+            <h1 className="bg-white/80 leading-tight inline w-fit text-7xl">
+              Siyoung Kim
+            </h1>
+          </div>
+          <div className="mb-6">
+            <h3 className="bg-white/80 inline w-fit">
+              Frontend Web Developer & UI/UX Designer
+            </h3>
+          </div>
+          <div className="flex flex-col md:w-fit items-center md:flex-row md:justify-start gap-4">
             <BasicButton text="Contact" external={true} href="https://www.linkedin.com/in/siyoung/"
               className="hover:bg-zinc-700 text-white bg-black border-black hover:border-zinc-700"/>
             <BasicButton text="Resume" external={true} href="KimSiyoungResume2026.pdf"
-              className="hover:bg-zinc-300 border-black"/>
+              className="hover:bg-zinc-300 bg-white border-black"/>
           </div>
         </div>
       </div>
