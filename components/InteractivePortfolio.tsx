@@ -1,5 +1,5 @@
 import Rolodex, { RolodexRef } from './Rolodex'
-import CameraTester from './CameraTester'
+import CameraContainer from './CameraContainer'
 import { Canvas } from '@react-three/fiber'
 import { useRef } from 'react'
 
@@ -20,7 +20,7 @@ export default function InteractivePortfolio() {
         }}>
           <ambientLight intensity={100}/>
           <Rolodex ref={rolodexRef}/>
-          <CameraTester/>
+          <CameraContainer/>
         </Canvas>
       </div>
       {/* "barrier" to let users rightclick to inspect, etc. on rolodex */}

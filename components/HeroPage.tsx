@@ -28,7 +28,7 @@ export default function HeroPage() {
           </div>
         </div>
       </div>
-      {/* Image */}
+      {/* Rolodex */}
       <div className="md:basis-1/2 flex items-center justify-center">
         <motion.div className="aspect-square w-180"
           initial={{ opacity: 0, y: 20 }}
@@ -41,25 +41,6 @@ export default function HeroPage() {
           <InteractivePortfolio/>
         </motion.div>
       </div>
-      {/* <motion.div className="bg-red-200 md:pl-10 md:h-full flex justify-center md:justify-start md:basis-1/2 md:my-auto md:items-center md:overflow-x-hidden lg:overflow-visible"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            duration: 0.8,
-            ease: "easeOut"
-          }}
-        >
-          <div className="relative w-[80%] md:w-auto md:h-[90%] aspect-video overflow-clip shadow-xl
-            border border-t-10 border-black rounded-sm
-            md:border-2 md:border-t-35 md:rounded-xl">
-            <Image 
-              alt="Alter Alley, a website for artists to share alters of Magic the Gathering cards." 
-              src="/alteralley-home.png"
-              className="object-cover object-top-left"
-              fill
-              /> 
-          </div>
-        </motion.div> */}
     </div>
   )
 }
