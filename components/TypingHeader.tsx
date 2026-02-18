@@ -21,9 +21,9 @@ export default function TypingHeader({ text }: { text: string }) {
   }
 
   return (
-    <div className="max-w-400 mx-auto w-[90%] text-center md:text-left">
+    <div className="max-w-400 mx-auto w-[90%]">
       <motion.h2
-        className="w-fit flex"
+        className="mx-auto w-fit md:w-auto flex"
         initial="hidden"
         variants={containerVariants}
         whileInView="visible"
@@ -31,7 +31,7 @@ export default function TypingHeader({ text }: { text: string }) {
       >
         {text.split("").map((char, index) => (
           <motion.span
-            className="text-[3rem] md:text-[5rem]"
+            className="text-[2.5rem] md:text-[5rem] bg-white/80"
             key={index}
             variants={letterVariants}
           >
@@ -39,7 +39,7 @@ export default function TypingHeader({ text }: { text: string }) {
           </motion.span>
         ))}
         <motion.div
-          className="bg-black w-0.5 h-15 md:h-25 my-auto"
+          className="bg-black w-0.5 h-13 md:h-25 my-auto"
           animate={{
             opacity: [1, 1, 0, 0]
           }}
