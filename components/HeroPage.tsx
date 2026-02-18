@@ -1,10 +1,12 @@
-import Image from "next/image";
+// import Image from "next/image";
 import BasicButton from "./BasicButton";
 import { motion } from "motion/react";
+import InteractivePortfolio from "./InteractivePortfolio";
 
 export default function HeroPage() {
   return (
-    <div className="relative max-w-400 md:grid md:grid-cols-2 md:h-180 md:max-h-[80vh] mx-auto">
+    // Took out md:h-180 for the rolodex
+    <div className="relative max-w-400 h-180 md:grid md:grid-cols-2 md:max-h-[80vh] mx-auto">
       {/* Text */}
       <div className="md:basis-1/2 md:my-auto">
         <div className="mx-auto w-fit text-center md:text-left my-10 md:m-10 wrap-break-word">
@@ -27,25 +29,37 @@ export default function HeroPage() {
         </div>
       </div>
       {/* Image */}
-      <motion.div className="md:pl-10 md:h-full flex justify-center md:justify-start md:basis-1/2 md:my-auto md:items-center md:overflow-x-hidden lg:overflow-visible"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: 0.8,
-          ease: "easeOut"
-        }}
+      <div className="md:basis-1/2 flex items-center justify-center">
+        <motion.div className="aspect-square w-180"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.8,
+            ease: "easeOut"
+          }}
+          >
+          <InteractivePortfolio/>
+        </motion.div>
+      </div>
+      {/* <motion.div className="bg-red-200 md:pl-10 md:h-full flex justify-center md:justify-start md:basis-1/2 md:my-auto md:items-center md:overflow-x-hidden lg:overflow-visible"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.8,
+            ease: "easeOut"
+          }}
         >
-        <div className="relative w-[80%] md:w-auto md:h-[90%] aspect-video overflow-clip shadow-xl
-          border border-t-10 border-black rounded-sm
-          md:border-2 md:border-t-35 md:rounded-xl">
-          <Image 
-            alt="Alter Alley, a website for artists to share alters of Magic the Gathering cards." 
-            src="/alteralley-home.png"
-            className="object-cover object-top-left"
-            fill
-            /> 
-        </div>
-      </motion.div>
+          <div className="relative w-[80%] md:w-auto md:h-[90%] aspect-video overflow-clip shadow-xl
+            border border-t-10 border-black rounded-sm
+            md:border-2 md:border-t-35 md:rounded-xl">
+            <Image 
+              alt="Alter Alley, a website for artists to share alters of Magic the Gathering cards." 
+              src="/alteralley-home.png"
+              className="object-cover object-top-left"
+              fill
+              /> 
+          </div>
+        </motion.div> */}
     </div>
   )
 }

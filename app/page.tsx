@@ -6,6 +6,7 @@ import LargeCard from "@/components/LargeCard";
 import MediumCard from "@/components/MediumCard";
 import Marquee from "@/components/Marquee";
 import TypingHeader from "@/components/TypingHeader";
+import InteractivePortfolio from "@/components/InteractivePortfolio";
 
 export default function Home() {
   return (
@@ -18,16 +19,16 @@ export default function Home() {
           <HeroPage/>
         </section>
         <Marquee text="REACT TYPESCRIPT NEXTJS TAILWIND CSS HTML MOTION"/>
-        {/* ================ Alter Alley (Project 1) ================ */}
-        {/* TODO: Giant label that says "Project work" */}
+        {/* ================ Portfolio ================ */}
         <section id="portfolio" className="scroll-mt-16 md:scroll-mt-13.75">
           <TypingHeader text="PORTFOLIO"/>
+
+
           <LargeCard title="Project: Alter Alley" 
             description="A website for artists to share alters of Magic the Gathering cards." 
             imageSrc="/alteralley-home.png"
             imageClass="object-top-left"/>
           <HorizontalDivider/>
-          {/* ================ Creative works ================ */}
           <div className="gap-8 flex flex-col md:flex-row md:justify-center
             max-w-400 mx-auto w-[90%] md:h-180 md:max-h-[80vh]">
             <MediumCard title="Lost Home - Animated Short" description="Created using Maya and Adobe After Effects."
