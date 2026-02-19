@@ -41,7 +41,7 @@ export default function MediumCard({ imageSrc="/temp.png", title, description, c
                 </div>
                 <div className="basis-1/2 p-4 flex flex-col gap-4">
                   <h2>{title}</h2>
-                <p className="text-sm text-gray-500">{description}</p>
+                <p className="text-sm text-gray-500 whitespace-pre-line">{description}</p>
                 </div>
               </motion.div>
             </>
@@ -71,7 +71,7 @@ export default function MediumCard({ imageSrc="/temp.png", title, description, c
               {/* Text */}
               <div className="bg-white/80 flex flex-col gap-4">
                 <h2>{title}</h2>
-                <p className="text-sm text-gray-500">{description}</p>
+                <p className="text-sm text-gray-500 whitespace-pre-line">{description}</p>
               </div>
             </>
             }

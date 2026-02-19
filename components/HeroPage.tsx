@@ -17,7 +17,7 @@ export default function HeroPage() {
           </div>
           <div className="mb-6">
             <h3 className="bg-white/80 inline w-fit">
-              Frontend Web Developer & UI/UX Designer
+              Frontend Web Developer & Software Engineer
             </h3>
           </div>
           <div className="flex flex-col md:w-fit items-center md:flex-row md:justify-start gap-4">
