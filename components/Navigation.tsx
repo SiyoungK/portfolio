@@ -1,4 +1,5 @@
 import BasicButton from "./BasicButton";
+import CrockyIcon from "./icons/CrockyIcon";
 
 export default function Navigation() {
   return (
@@ -9,7 +10,9 @@ export default function Navigation() {
           href="http://localhost:3000/"
           className="text-black my-auto mx-3 rounded-xl"
         >
-            SK
+          <div className="w-[3rem]">
+            <CrockyIcon/>
+          </div>
         </a>
         {/* Links */}
         <div className="flex space-x-4 items-center">
