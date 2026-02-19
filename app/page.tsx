@@ -113,7 +113,6 @@ export default function Home() {
               I graduated from Georgia Tech with a B.S. in Computer Science. 
 
               I enjoy weightlifting, playing Magic the Gathering at card shops, and all kinds of PC gaming.
-
             `}
            imageSrc2="/aboutme-pic3.jpg"
            imageSrc="/aboutme-pic4.jpg"
