@@ -6,7 +6,7 @@ import InteractivePortfolio from "./InteractivePortfolio";
 export default function HeroPage() {
   return (
     // Took out md:h-180 for the rolodex
-    <div className="relative max-w-400 md:grid md:grid-cols-2 mx-auto md:min-h-160 pb-6 md:pb-0">
+    <div className="relative max-w-350 md:grid md:grid-cols-2 mx-auto md:min-h-160 pb-6 md:pb-0">
       {/* Text */}
       <div className="md:basis-1/2 md:my-auto">
         <div className="mx-auto w-fit text-center md:text-left my-10 md:m-10 wrap-break-word">
@@ -39,7 +39,7 @@ export default function HeroPage() {
           }}
           >
           {/* Label */}
-          <div className="absolute z-10 w-fit top-[-10%] -translate-x-1/2 md:top-[10%]">
+          <div className="absolute z-10 w-fit top-[0%] -translate-x-1/2 md:top-[15%]">
             <h4 className="mx-2 whitespace-nowrap font-doto font-bold">
               ROTATE ME
             </h4>
