@@ -6,11 +6,13 @@ import LargeCard from "@/components/LargeCard";
 import MediumCard from "@/components/MediumCard";
 import Marquee from "@/components/Marquee";
 import TypingHeader from "@/components/TypingHeader";
+import CornersOverlay from "@/components/CornersOverlay";
 
 export default function Home() {
   return (
     <div className="overflow-hidden min-h-screen bg-white bg-[radial-gradient(lightgray_1px,transparent_1px)] bg-size-[40px_40px]">
       {/* TODO: Nav */}
+      <CornersOverlay/>
       <Navigation/>
       <main className="pt-16 md:pt-13.75">
         {/* ================ Hero ================ */}
@@ -95,8 +97,8 @@ export default function Home() {
                 {`I graduated with a B.S. in Computer Science with a 3.86 GPA. My threads were in Media and Intelligence.
                   
                   Relevant coursework: Computer Graphics, Computer Animation, 3D Animation, Game Development, Objects and Design, Data Structures and Algorithms. `}
-              imageSrc="/erieinsurance-logo.png"
-              alt="Erie Insurance Logo"
+              imageSrc="/georgiatech.jpg"
+              alt="Tech Tower, an iconic symbol of tradition at Georgia Tech."
               delayIndex={2}
               />
           </div>

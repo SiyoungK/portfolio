@@ -31,7 +31,7 @@ export default function MediumCard({ imageSrc="/temp.png", title, description, c
                   amount: 0.5
                 }}
               >
-                <div className="relative basis-1/2">
+                <div className="relative basis-1/2 m-4">
                   <Image 
                     alt={alt} 
                     src={imageSrc}
