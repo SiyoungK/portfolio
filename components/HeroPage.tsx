@@ -30,7 +30,7 @@ export default function HeroPage() {
       </div>
       {/* Rolodex */}
       <div className="md:basis-1/2 flex items-center justify-center px-10">
-        <motion.div className="aspect-square w-[80%] md:w-full"
+        <motion.div className="relative aspect-square w-[80%] md:w-full"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -38,6 +38,26 @@ export default function HeroPage() {
             ease: "easeOut"
           }}
           >
+          {/* Label */}
+          <div className="absolute z-10 w-fit top-[-10%] -translate-x-1/2 md:top-[10%]">
+            <h4 className="mx-2 whitespace-nowrap font-doto font-bold">
+              ROTATE ME
+            </h4>
+            <div className="absolute inset-0 z-16">
+              {/* Underline */}
+              <div className="absolute w-full h-[1px] rounded-4xl bg-black top-[1.4rem]"/>
+              {/* Left Peg */}
+              <div className="absolute w-[1px] h-[calc(.5rem+1px)] rounded-4xl bg-black top-[calc(1.4rem-.5rem)]"/>
+              {/* Right Peg */}
+              <div className="absolute w-[1px] h-[calc(.5rem+1px)] rounded-4xl bg-black left-[calc(100%-1px)] top-[calc(1.4rem-.5rem)]"/>
+              {/* Down */}
+              <div className="absolute w-[1px] h-[calc(50px+1px)] rounded-4xl bg-black left-[calc(50%-1px)] top-[1.4rem]"/>
+              {/* Right */}
+              <div className="absolute w-[40px] h-[1px] rounded-4xl bg-black left-[calc(50%-1px)] top-[calc(1.4rem+50px)]"/>
+              {/* Circle */}
+              <div className="absolute w-[6px] h-[6px] rounded-4xl border-black border bg-white left-[calc(50%+37px)] top-[calc(1.4rem+48px)]"/>
+            </div>
+          </div>
           <InteractivePortfolio/>
         </motion.div>
       </div>
