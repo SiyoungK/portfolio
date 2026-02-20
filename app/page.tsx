@@ -94,7 +94,7 @@ export default function Home() {
               />
               <MediumCard compact={true} title="Undergraduate @GeorgiaTech" 
               description=
-                {`I graduated with a B.S. in Computer Science with a 3.86 GPA. My threads were in Media and Intelligence.
+                {`I graduated with a B.S. in Computer Science with a 3.85 GPA. My threads were in Media and Intelligence.
                   
                   Relevant coursework: Computer Graphics, Computer Animation, 3D Animation, Game Development, Objects and Design, Data Structures and Algorithms. `}
               imageSrc="/georgiatech.jpg"
